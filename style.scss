@@ -1,0 +1,94 @@
+@import "compass";
+$baseFontFamily: "游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+//colors
+$baseColor: #F6F6E3;
+$subColor: #C2DBC1;
+$keyColor: #DF6A6A;
+$fontColor: #4c4c4c;
+
+/* Base
+------------------------------------------------------------*/
+html{ font-size: 62.5%; }
+
+body{
+    color: $fontColor;
+    font-size: 1.4rem;
+    font-family: $baseFontFamily;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+    background-color: $baseColor;
+}
+
+//header画像
+
+header{
+  background-image:url(./image/mizuho17810DSC_0214_TP_V.jpg);
+  height: 250px;
+  background-size: cover;
+}
+
+@media (min-width: 769px){
+    header{
+        height: 500px;
+    }
+}
+
+//mainのテキストとボックス
+.text-center{
+    text-align: center;
+}
+
+section{
+    margin:50px 0;
+    padding: 40px 0;
+    background-color: $subColor;
+    h1{
+       font-size: 2.2rem;
+       color: $baseColor;
+    }
+}
+.container{
+    width: 100%;
+    margin: 15px 0;
+    .textbox{
+        margin: 15px 30px;
+        min-height: 300px; // 任意の高さ
+        background-color: $baseColor;
+        h2{
+            background-color: $keyColor;
+            
+        }
+    }
+}
+
+@media (min-width: 769px){
+    header{
+        height: 500px;
+    }
+    .container{
+        display: flex;
+        display: -webkit-flex;
+        .textbox{
+            width: 33.3%;
+        }
+    }
+}
+    
+footer{
+    margin: 30px 0;
+    
+    h3{
+     text-align: center;
+     margin: 20px 0;
+     font-size: 2.2rem;
+    }
+    
+    .iconbox{
+     background-color: $keyColor;
+     width: 80px;
+     height: 80px;
+     margin: auto;
+     border-radius: 25px;
+    }
+}
